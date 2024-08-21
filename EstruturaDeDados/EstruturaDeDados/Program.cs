@@ -57,13 +57,29 @@ internal class Program
         frutas.Remove("Morango");
 
         /* Imprimindo da Lista novamente*/
-        Console.WriteLine()
+        Console.WriteLine();
         Console.WriteLine("Minha Lista de Frutas:");
         frutas.ForEach(Console.WriteLine);
 
         /* Apagar todos os elementos da lista*/
         frutas.Clear();
 
+        Console.WriteLine();
+        Console.WriteLine("===================================================");
+        Console.WriteLine();
 
+        // TRABALHANDO COM DICIONARIO (DICTIONARY)
+        /* Criando um Dicionario de Dado*/
+        Dictionary<int, string> carros = new Dictionary<int, string>();
+        /*Adicionar Dados a um Dicionário */
+        carros.Add(5, "Corsa");
+        carros.Add(10, "Fusca");
+        carros.Add(2, "Ford Ka");
+
+        /* Imprimir um Dicionario de Dados */
+        foreach (var carro in carros)
+        {
+            Console.WriteLine($"{carro.Key} - {carro.Value}");
+        }
     }
 }
